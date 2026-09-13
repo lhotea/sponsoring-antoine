@@ -9,7 +9,7 @@
 <link rel="canonical" href="https://antoinelhote.ch/">
 <meta property="og:type" content="profile">
 <meta property="og:title" content="Antoine L'Hôte — Elite-Triathlet · Schweiz">
-<meta property="og:description" content="Schweizer Elite-Triathlet, Jahrgang 2005. Mehrfacher Schweizermeister, Rang 12 Junioren-WM 2024. Resultate, Geschichte und Sponsoring.">
+<meta property="og:description" content="Schweizer Elite-Triathlet, Jahrgang 2005. Schweizermeister U23 2026, Rang 12 Junioren-WM 2024. Resultate, Geschichte und Sponsoring.">
 <meta property="og:image" content="https://antoinelhote.ch/assets/og-image.jpg">
 <meta property="og:url" content="https://antoinelhote.ch/">
 <meta name="twitter:card" content="summary_large_image">
@@ -34,7 +34,7 @@
 }
 </script>
 <title>Antoine L'Hôte — Elite-Triathlet · Schweiz</title>
-<meta name="description" content="Antoine L'Hôte, Schweizer Elite-Triathlet (Jahrgang 2005). Geschichte, Resultate und Sponsoring-Möglichkeiten.">
+<meta name="description" content="Antoine L'Hôte, Schweizer Elite-Triathlet (Jahrgang 2005). Schweizermeister U23 2026. Geschichte, Resultate und Sponsoring-Möglichkeiten.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -314,6 +314,7 @@
     background:var(--mist);color:var(--ink);
   }
   .pos.top{background:var(--red);color:#fff}
+  .pos.gold{background:var(--lake);color:#fff;box-shadow:inset 0 0 0 2px var(--aqua)}
   td.race{font-weight:600}
   td.race small{display:block;font-weight:400;color:var(--muted);font-size:.78rem;margin-top:2px}
   td.time,td.date{font-family:var(--mono);font-size:.85rem;color:#33454F;white-space:nowrap}
@@ -325,6 +326,9 @@
   .sheet-foot a:hover{text-decoration:underline}
   @media (max-width:640px){
     thead th:nth-child(4),tbody td:nth-child(4){display:none}
+    .sheet{overflow-x:auto}
+    thead th,tbody td{padding-left:12px;padding-right:12px}
+    td.race{overflow-wrap:anywhere}
   }
 
   /* ---------- sponsoring ---------- */
@@ -409,6 +413,9 @@
   .hero-main,.nextrace{position:relative;z-index:2}
   .ch-photos{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
   .ch-photos img{width:100%;border-radius:10px;display:block}
+  .ch-duo{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .ch-duo img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px;display:block}
+  @media (max-width:640px){ .ch-duo{grid-template-columns:1fr} }
   .ch-media{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:stretch}
   .ch-media img{width:100%;height:100%;object-fit:cover;border-radius:10px;display:block}
   .ch-media .video-card{aspect-ratio:auto;min-height:240px;height:100%}
@@ -531,6 +538,7 @@
       <span>Run&nbsp;5km</span>
     </div>
     <div class="honours rise d3">
+      <span class="honour"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8FE0DB" stroke-width="2"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg><span data-i18n="hon.0">Schweizermeister U23 2026</span></span>
       <span class="honour"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8FE0DB" stroke-width="2"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg><span data-i18n="hon.1">Mehrfacher Schweizermeister</span></span>
       <span class="honour"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8FE0DB" stroke-width="2"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg><span data-i18n="hon.2">Rang 12 · Junioren-WM 2024</span></span>
       <a class="honour" href="https://swisstriathlon.ch/kaderliste-2/" target="_blank" rel="noopener"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#8FE0DB" stroke-width="2"><circle cx="12" cy="9" r="5.5"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></svg><span>Swiss Triathlon Elite-Kader C</span></a>
@@ -565,12 +573,12 @@
   <div class="nextrace">
     <div class="nextrace-inner">
       <span class="live-dot" aria-hidden="true"></span>
-      <span class="tag" data-i18n="next.tag">Nächste Starts</span>
+      <span class="tag" data-i18n="next.tag">Neuestes Resultat</span>
       <div class="nextrace-list">
         <div class="nextrace-item">
-          <span class="event" data-i18n="next.event1">Europe Triathlon Cup · Derry~Londonderry (NIR)</span>
-          <span class="meta">05.09.2026</span>
-          <span class="meta" data-i18n="next.note1">Nächster Continental-Cup-Start</span>
+          <span class="event" data-i18n="next.event1">Schweizer Meisterschaften · Yverdon-les-Bains</span>
+          <span class="meta">13.09.2026</span>
+          <span class="meta home" data-i18n="next.note1">Rang 3 Elite · Schweizermeister U23</span>
         </div>
       </div>
     </div>
@@ -582,7 +590,7 @@
   <div class="wrap">
     <div class="story-head">
       <p class="kicker" data-i18n="st.kicker">Die Geschichte</p>
-      <h2 data-i18n="st.title">Vier Kapitel einer Karriere, die erst beginnt</h2>
+      <h2 data-i18n="st.title">Fünf Kapitel einer Karriere, die erst beginnt</h2>
     </div>
 
     <!-- Chapter 01 -->
@@ -679,25 +687,58 @@
     <article class="chapter">
       <div class="ch-rail">
         <span class="ch-num">04</span>
-        <span class="ch-when" data-i18n="ch4.when">2026 → 2032</span>
+        <span class="ch-when" data-i18n="ch4.when">September 2026</span>
       </div>
       <div class="ch-body">
-        <h3 data-i18n="ch4.title">Der lange Weg nach Brisbane</h3>
+        <h3 data-i18n="ch4.title">Der Titel</h3>
         <p class="lede" data-i18n="ch4.lede">
+          Rang 10 am Europacup in Derry — und eine Woche später der grösste Tag der
+          Saison: Schweizermeister U23.
+        </p>
+        <p class="txt" data-i18n="ch4.p1">
+          Am 5. September kommt Antoine am Europe Triathlon Cup in Derry~Londonderry (NIR)
+          als Zehnter ins Ziel — sein bestes Continental-Cup-Resultat der Saison. Acht Tage
+          später folgt in Yverdon-les-Bains das Saisonfinale: An den Schweizer
+          Meisterschaften steigt er als Erster aus dem Wasser, führt das Feld auch nach der
+          zweiten Wechselzone an und bringt Rang 3 in der Elite-Gesamtwertung ins Ziel.
+          In der Kategorie U23 heisst das: Schweizermeister 2026.
+        </p>
+        <p class="pull" data-i18n="ch4.pull">Erster aus dem Wasser. Dritter im Ziel. Schweizermeister U23.</p>
+        <div class="ch-duo">
+          <img src="assets/yverdon-swim-exit.jpg" alt="Antoine im roten Schweizer Rennanzug beim Ausstieg aus dem Neuenburgersee in Yverdon-les-Bains">
+          <img src="assets/yverdon-podium-u23.jpg" alt="Antoine zuoberst auf dem U23-Podest der Schweizer Meisterschaften in Yverdon-les-Bains">
+        </div>
+        <p class="ph-cap" data-i18n="cap.ch4">Yverdon-les-Bains: als Erster aus dem Wasser — und zuoberst auf dem U23-Podest.</p>
+        <figure class="ch-photo-wide">
+          <img src="assets/yverdon-podium-elite.jpg" alt="Antoine auf Rang 3 des Elite-Podests der Swiss Triathlon National League in Yverdon-les-Bains">
+          <p class="ph-cap" data-i18n="cap.ch4b">Rang 3 in der Elite-Gesamtwertung — auf dem Podest der Swiss Triathlon National League.</p>
+        </figure>
+      </div>
+    </article>
+
+    <!-- Chapter 05 -->
+    <article class="chapter">
+      <div class="ch-rail">
+        <span class="ch-num">05</span>
+        <span class="ch-when" data-i18n="ch5.when">2026 → 2032</span>
+      </div>
+      <div class="ch-body">
+        <h3 data-i18n="ch5.title">Der lange Weg nach Brisbane</h3>
+        <p class="lede" data-i18n="ch5.lede">
           Die Qualifikation für die U23-WM in Spanien knapp verpasst — der Blick geht
           weiter nach vorne: Brisbane 2032 am Horizont.
         </p>
-        <p class="txt" data-i18n="ch4.p1">
+        <p class="txt" data-i18n="ch5.p1">
           Der Plan bleibt langfristig: Für die U23-WM 2026 hat es diesmal nicht gereicht
           — ein Rückschlag, der zeigt, wie eng es an der Spitze zugeht. Der Fokus richtet
           sich auf den nächsten Anlauf: sich Jahr für Jahr näher an die Weltspitze
           heranarbeiten. Wer jetzt einsteigt, begleitet diesen Weg von Anfang an — und
           wächst mit jeder Saison mit.
         </p>
-        <p class="pull" data-i18n="ch4.pull">Brisbane 2032 ist der Traum. Der Weg dorthin beginnt jetzt.</p>
+        <p class="pull" data-i18n="ch5.pull">Brisbane 2032 ist der Traum. Der Weg dorthin beginnt jetzt.</p>
         <figure class="ch-photo-wide">
           <img src="assets/relay-team.jpg" alt="Antoine Hand in Hand mit dem Schweizer Mixed-Relay-Team im Zielkanal">
-          <p class="ph-cap" data-i18n="cap.ch4">Gemeinsam für die Schweiz: mit dem Mixed-Relay-Nationalteam im Zielkanal.</p>
+          <p class="ph-cap" data-i18n="cap.ch5">Gemeinsam für die Schweiz: mit dem Mixed-Relay-Nationalteam im Zielkanal.</p>
         </figure>
       </div>
     </article>
@@ -711,7 +752,7 @@
     <h2 data-i18n="results.title">Resultate 2026</h2>
     <p class="lead" data-i18n="results.lead">
       Die Geschichte ist gut — die Zahlen belegen sie. Elite-Rennen auf dem
-      World-Triathlon-Circuit, Sprintdistanz. Stand: August 2026.
+      World-Triathlon-Circuit, Sprintdistanz. Stand: September 2026.
     </p>
     <div class="sheet">
       <table>
@@ -724,6 +765,18 @@
           </tr>
         </thead>
         <tbody>
+          <tr>
+            <td><span class="pos gold">3</span></td>
+            <td class="race">Swiss Championships · Yverdon-les-Bains <small>Switzerland · Elite Men · U23 Swiss Champion</small></td>
+            <td class="date">13.09.2026</td>
+            <td class="time">—</td>
+          </tr>
+          <tr>
+            <td><span class="pos top">10</span></td>
+            <td class="race">Europe Triathlon Cup · Derry~Londonderry <small>Northern Ireland · Elite Men</small></td>
+            <td class="date">05.09.2026</td>
+            <td class="time">—</td>
+          </tr>
           <tr>
             <td><span class="pos top">9</span></td>
             <td class="race">FISU World University Championships · Nyon <small>Switzerland · Mixed Relay</small></td>
@@ -919,7 +972,7 @@
       <a href="https://instagram.com/lhote_antoine" target="_blank" rel="noopener">@lhote_antoine</a>
       <a href="mailto:antoine@lhote.ch">antoine@lhote.ch</a>
     </div>
-    <span data-i18n="ft.src">Resultate & Ranking: triathlon.org, Stand Juli 2026</span>
+    <span data-i18n="ft.src">Resultate & Ranking: triathlon.org, Stand September 2026</span>
   </div>
 </footer>
 
@@ -931,11 +984,11 @@ const I18N = {
     "hero.tagline":"21 Jahre alt. Für die Schweiz auf dem internationalen Continental-Cup-Circuit unterwegs. Auf dem Weg Richtung Weltspitze — mit Partnern, die früh an ihn glauben.",
     "hero.cta1":"Partner werden","hero.cta2":"Die Geschichte lesen",
     "stat.rank":"Weltrangliste","stat.starts":"Int. Starts","stat.podiums":"Podestplätze","stat.wins":"Siege",
-    "hon.1":"Mehrfacher Schweizermeister","hon.2":"Rang 12 · Junioren-WM 2024",
-    "next.tag":"Nächste Starts",
-    "next.event1":"Europe Triathlon Cup · Derry~Londonderry (NIR)",
-    "next.note1":"Nächster Continental-Cup-Start",
-    "st.kicker":"Die Geschichte","st.title":"Vier Kapitel einer Karriere, die erst beginnt",
+    "hon.0":"Schweizermeister U23 2026","hon.1":"Mehrfacher Schweizermeister","hon.2":"Rang 12 · Junioren-WM 2024",
+    "next.tag":"Neuestes Resultat",
+    "next.event1":"Schweizer Meisterschaften · Yverdon-les-Bains",
+    "next.note1":"Rang 3 Elite · Schweizermeister U23",
+    "st.kicker":"Die Geschichte","st.title":"Fünf Kapitel einer Karriere, die erst beginnt",
     "ch1.when":"2005 – 2025","ch1.title":"Drei Disziplinen, ein Weg",
     "ch1.lede":"Jahrgang 2005, gross geworden mit Schwimmen, Rad und Laufen — und früh war klar: Das soll mehr sein als ein Hobby.",
     "ch1.p1":"An der UNITED School of Sports verbindet Antoine Ausbildung und Spitzensport, 2025 schliesst er ab. Im Nachwuchs holt er mehrere Schweizermeistertitel — und zeigt es auch international: Top 20 an der Junioren-WM 2023 in Hamburg, Rang 12 an der Junioren-WM 2024 in Torremolinos.",
@@ -945,7 +998,9 @@ const I18N = {
     "cap.ch1":"Aus den Junior-Jahren: erste Rennen, erste Siege.",
     "cap.sp":"Ihr Logo mitten im Rennen: Sichtbarkeit auf Anzug und Rad.",
     "cap.pod":"6 Podestplätze in der Bilanz — drei Momente davon im Bild.",
-    "cap.ch4":"Gemeinsam für die Schweiz: mit dem Mixed-Relay-Nationalteam im Zielkanal.",
+    "cap.ch4":"Yverdon-les-Bains: als Erster aus dem Wasser — und zuoberst auf dem U23-Podest.",
+    "cap.ch4b":"Rang 3 in der Elite-Gesamtwertung — auf dem Podest der Swiss Triathlon National League.",
+    "cap.ch5":"Gemeinsam für die Schweiz: mit dem Mixed-Relay-Nationalteam im Zielkanal.",
     "gal.kicker":"Impressionen","gal.title":"Momente aus dem Renngeschehen",
     "ch2.when":"Winter 2025 → Mai 2026","ch2.title":"Das Comeback",
     "ch2.lede":"Eine Verletzung stoppt den Saisonstart — und stellt die Frage, wo er wirklich steht.",
@@ -956,12 +1011,16 @@ const I18N = {
     "ch3.lede":"Das EM-Debüt in Elbląg — und ein starkes Heimrennen in Nyon am Genfersee.",
     "ch3.p1":"Am 31. Juli gibt Antoine sein Debüt an den Elite-Sprint-Europameisterschaften in Elbląg (POL), Rang 38. Eine Woche später, am 8. und 9. August, folgt das Heimrennen der FISU Uni-Weltmeisterschaften in Nyon: Rang 17 im Einzel und mit der Schweizer Mixed-Staffel ein starker 9. Platz — vor Heimpublikum am Genfersee und mit der grössten Sichtbarkeit der ganzen Saison für Partner.",
     "vid.v2.title":"Unterwegs mit Antoine","vid.v2.sub":"Video ansehen →",
-    "ch4.when":"2026 → 2032","ch4.title":"Der lange Weg nach Brisbane",
-    "ch4.lede":"Die Qualifikation für die U23-WM in Spanien knapp verpasst — der Blick geht weiter nach vorne: Brisbane 2032 am Horizont.",
-    "ch4.p1":"Der Plan bleibt langfristig: Für die U23-WM 2026 hat es diesmal nicht gereicht — ein Rückschlag, der zeigt, wie eng es an der Spitze zugeht. Der Fokus richtet sich auf den nächsten Anlauf: sich Jahr für Jahr näher an die Weltspitze heranarbeiten. Wer jetzt einsteigt, begleitet diesen Weg von Anfang an — und wächst mit jeder Saison mit.",
-    "ch4.pull":"Brisbane 2032 ist der Traum. Der Weg dorthin beginnt jetzt.",
+    "ch4.when":"September 2026","ch4.title":"Der Titel",
+    "ch4.lede":"Rang 10 am Europacup in Derry — und eine Woche später der grösste Tag der Saison: Schweizermeister U23.",
+    "ch4.p1":"Am 5. September kommt Antoine am Europe Triathlon Cup in Derry~Londonderry (NIR) als Zehnter ins Ziel — sein bestes Continental-Cup-Resultat der Saison. Acht Tage später folgt in Yverdon-les-Bains das Saisonfinale: An den Schweizer Meisterschaften steigt er als Erster aus dem Wasser, führt das Feld auch nach der zweiten Wechselzone an und bringt Rang 3 in der Elite-Gesamtwertung ins Ziel. In der Kategorie U23 heisst das: Schweizermeister 2026.",
+    "ch4.pull":"Erster aus dem Wasser. Dritter im Ziel. Schweizermeister U23.",
+    "ch5.when":"2026 → 2032","ch5.title":"Der lange Weg nach Brisbane",
+    "ch5.lede":"Die Qualifikation für die U23-WM in Spanien knapp verpasst — der Blick geht weiter nach vorne: Brisbane 2032 am Horizont.",
+    "ch5.p1":"Der Plan bleibt langfristig: Für die U23-WM 2026 hat es diesmal nicht gereicht — ein Rückschlag, der zeigt, wie eng es an der Spitze zugeht. Der Fokus richtet sich auf den nächsten Anlauf: sich Jahr für Jahr näher an die Weltspitze heranarbeiten. Wer jetzt einsteigt, begleitet diesen Weg von Anfang an — und wächst mit jeder Saison mit.",
+    "ch5.pull":"Brisbane 2032 ist der Traum. Der Weg dorthin beginnt jetzt.",
     "results.kicker":"Die Fakten","results.title":"Resultate 2026",
-    "results.lead":"Die Geschichte ist gut — die Zahlen belegen sie. Elite-Rennen auf dem World-Triathlon-Circuit, Sprintdistanz. Stand: August 2026.",
+    "results.lead":"Die Geschichte ist gut — die Zahlen belegen sie. Elite-Rennen auf dem World-Triathlon-Circuit, Sprintdistanz. Stand: September 2026.",
     "th.pos":"Rang","th.race":"Rennen","th.date":"Datum","th.time":"Zeit",
     "results.source":"Offizielle Daten: World Triathlon",
     "results.link":"Alle Resultate auf triathlon.org →",
@@ -982,7 +1041,7 @@ const I18N = {
     "ct.btn.mail":"E-Mail schreiben",
     "ft.copy":"© 2026 Antoine L'Hôte · Alle Rechte vorbehalten",
     "ft.wt":"World-Triathlon-Profil",
-    "ft.src":"Resultate & Ranking: triathlon.org, Stand Juli 2026",
+    "ft.src":"Resultate & Ranking: triathlon.org, Stand September 2026",
     "meta.title":"Antoine L'Hôte — Elite-Triathlet · Schweiz"
   },
   fr: {
@@ -991,11 +1050,11 @@ const I18N = {
     "hero.tagline":"21 ans. Il court pour la Suisse sur le circuit international des coupes continentales. En route vers l'élite mondiale — avec des partenaires qui y croient dès aujourd'hui.",
     "hero.cta1":"Devenir partenaire","hero.cta2":"Lire l'histoire",
     "stat.rank":"Classement mondial","stat.starts":"Départs int.","stat.podiums":"Podiums","stat.wins":"Victoires",
-    "hon.1":"Multiple champion suisse","hon.2":"12e · Mondiaux juniors 2024",
-    "next.tag":"Prochains départs",
-    "next.event1":"Europe Triathlon Cup · Derry~Londonderry (NIR)",
-    "next.note1":"Prochain départ en Coupe Continentale",
-    "st.kicker":"L'histoire","st.title":"Quatre chapitres d'une carrière qui ne fait que commencer",
+    "hon.0":"Champion suisse U23 2026","hon.1":"Multiple champion suisse","hon.2":"12e · Mondiaux juniors 2024",
+    "next.tag":"Dernier résultat",
+    "next.event1":"Championnats suisses · Yverdon-les-Bains",
+    "next.note1":"3e élite · champion suisse U23",
+    "st.kicker":"L'histoire","st.title":"Cinq chapitres d'une carrière qui ne fait que commencer",
     "ch1.when":"2005 – 2025","ch1.title":"Trois disciplines, un seul chemin",
     "ch1.lede":"Né en 2005, il grandit entre natation, vélo et course à pied — et très tôt, une évidence : ce sera plus qu'un hobby.",
     "ch1.p1":"À la UNITED School of Sports, Antoine concilie formation et sport d'élite ; il obtient son diplôme en 2025. Chez les juniors, il décroche plusieurs titres de champion suisse — et le confirme à l'international : top 20 aux Mondiaux juniors 2023 à Hambourg, 12e aux Mondiaux juniors 2024 à Torremolinos.",
@@ -1005,7 +1064,9 @@ const I18N = {
     "cap.ch1":"Les années juniors : premières courses, premières victoires.",
     "cap.sp":"Votre logo au cœur de la course : visibilité sur la combinaison et le vélo.",
     "cap.pod":"6 podiums au palmarès — trois de ces moments en images.",
-    "cap.ch4":"Ensemble pour la Suisse : avec l'équipe nationale de relais mixte dans le couloir d'arrivée.",
+    "cap.ch4":"Yverdon-les-Bains : premier hors de l'eau — et tout en haut du podium U23.",
+    "cap.ch4b":"3e du classement élite — sur le podium de la Swiss Triathlon National League.",
+    "cap.ch5":"Ensemble pour la Suisse : avec l'équipe nationale de relais mixte dans le couloir d'arrivée.",
     "gal.kicker":"Impressions","gal.title":"Moments de course",
     "ch2.when":"Hiver 2025 → mai 2026","ch2.title":"Le retour",
     "ch2.lede":"Une blessure stoppe le début de saison — et pose la question : où en est-il vraiment ?",
@@ -1016,12 +1077,16 @@ const I18N = {
     "ch3.lede":"Les débuts aux Championnats d'Europe à Elbląg — et une belle course à domicile à Nyon.",
     "ch3.p1":"Le 31 juillet, Antoine fait ses débuts aux Championnats d'Europe élite de sprint à Elbląg (POL), 38e. Une semaine plus tard, les 8 et 9 août, place à la course à domicile des Championnats du monde universitaires FISU à Nyon : 17e en individuel et un solide 9e rang avec le relais mixte suisse — devant le public à domicile au bord du Léman, pour la plus grande visibilité de la saison auprès des partenaires.",
     "vid.v2.title":"En route avec Antoine","vid.v2.sub":"Voir la vidéo →",
-    "ch4.when":"2026 → 2032","ch4.title":"La longue route vers Brisbane",
-    "ch4.lede":"La qualification pour les Mondiaux U23 en Espagne manquée de peu — le regard se porte plus loin : Brisbane 2032 à l'horizon.",
-    "ch4.p1":"Le plan reste à long terme : la qualification pour les Mondiaux U23 2026 n'a cette fois pas suffi — un revers qui montre à quel point le niveau est serré au sommet. Le focus est désormais sur la prochaine étape : se rapprocher année après année de l'élite mondiale. Ceux qui s'engagent maintenant accompagnent ce chemin dès le départ — et grandissent à chaque saison.",
-    "ch4.pull":"Brisbane 2032 est le rêve. Le chemin commence maintenant.",
+    "ch4.when":"Septembre 2026","ch4.title":"Le titre",
+    "ch4.lede":"10e à la Coupe d'Europe de Derry — et une semaine plus tard, le plus grand jour de la saison : champion suisse U23.",
+    "ch4.p1":"Le 5 septembre, Antoine franchit la ligne en 10e position à l'Europe Triathlon Cup de Derry~Londonderry (NIR) — son meilleur résultat en Coupe Continentale de la saison. Huit jours plus tard, place à la finale de la saison à Yverdon-les-Bains : aux Championnats suisses, il sort de l'eau en tête, mène encore la course à la sortie de la deuxième zone de transition et ramène la 3e place du classement élite à l'arrivée. Dans la catégorie U23, cela signifie : champion suisse 2026.",
+    "ch4.pull":"Premier hors de l'eau. Troisième à l'arrivée. Champion suisse U23.",
+    "ch5.when":"2026 → 2032","ch5.title":"La longue route vers Brisbane",
+    "ch5.lede":"La qualification pour les Mondiaux U23 en Espagne manquée de peu — le regard se porte plus loin : Brisbane 2032 à l'horizon.",
+    "ch5.p1":"Le plan reste à long terme : la qualification pour les Mondiaux U23 2026 n'a cette fois pas suffi — un revers qui montre à quel point le niveau est serré au sommet. Le focus est désormais sur la prochaine étape : se rapprocher année après année de l'élite mondiale. Ceux qui s'engagent maintenant accompagnent ce chemin dès le départ — et grandissent à chaque saison.",
+    "ch5.pull":"Brisbane 2032 est le rêve. Le chemin commence maintenant.",
     "results.kicker":"Les faits","results.title":"Résultats 2026",
-    "results.lead":"L'histoire est belle — les chiffres la confirment. Courses élite sur le circuit World Triathlon, distance sprint. État : août 2026.",
+    "results.lead":"L'histoire est belle — les chiffres la confirment. Courses élite sur le circuit World Triathlon, distance sprint. État : septembre 2026.",
     "th.pos":"Rang","th.race":"Course","th.date":"Date","th.time":"Temps",
     "results.source":"Données officielles : World Triathlon",
     "results.link":"Tous les résultats sur triathlon.org →",
@@ -1042,7 +1107,7 @@ const I18N = {
     "ct.btn.mail":"Écrire un e-mail",
     "ft.copy":"© 2026 Antoine L'Hôte · Tous droits réservés",
     "ft.wt":"Profil World Triathlon",
-    "ft.src":"Résultats & classement : triathlon.org, état juillet 2026",
+    "ft.src":"Résultats & classement : triathlon.org, état septembre 2026",
     "meta.title":"Antoine L'Hôte — Triathlète élite · Suisse"
   },
   en: {
@@ -1051,11 +1116,11 @@ const I18N = {
     "hero.tagline":"21 years old. Racing the international continental cup circuit for Switzerland. On the way toward the world's elite — with partners who believe early.",
     "hero.cta1":"Become a partner","hero.cta2":"Read the story",
     "stat.rank":"World ranking","stat.starts":"Int. starts","stat.podiums":"Podiums","stat.wins":"Wins",
-    "hon.1":"Multiple Swiss champion","hon.2":"12th · Junior Worlds 2024",
-    "next.tag":"Next races",
-    "next.event1":"Europe Triathlon Cup · Derry~Londonderry (NIR)",
-    "next.note1":"Next Continental Cup start",
-    "st.kicker":"The story","st.title":"Four chapters of a career that is only beginning",
+    "hon.0":"U23 Swiss Champion 2026","hon.1":"Multiple Swiss champion","hon.2":"12th · Junior Worlds 2024",
+    "next.tag":"Latest result",
+    "next.event1":"Swiss Championships · Yverdon-les-Bains",
+    "next.note1":"3rd elite · U23 Swiss Champion",
+    "st.kicker":"The story","st.title":"Five chapters of a career that is only beginning",
     "ch1.when":"2005 – 2025","ch1.title":"Three disciplines, one path",
     "ch1.lede":"Born in 2005, raised on swimming, cycling and running — and it was clear early on: this would be more than a hobby.",
     "ch1.p1":"At the UNITED School of Sports, Antoine combined education with elite sport, graduating in 2025. In the junior ranks he claimed multiple Swiss championship titles — and proved it internationally: top 20 at the 2023 Junior World Championships in Hamburg, 12th at the 2024 Junior Worlds in Torremolinos.",
@@ -1065,7 +1130,9 @@ const I18N = {
     "cap.ch1":"The junior years: first races, first wins.",
     "cap.sp":"Your logo in the middle of the race: visibility on suit and bike.",
     "cap.pod":"6 career podiums — three of those moments pictured.",
-    "cap.ch4":"Together for Switzerland: with the national mixed relay team in the finish chute.",
+    "cap.ch4":"Yverdon-les-Bains: first out of the water — and top of the U23 podium.",
+    "cap.ch4b":"3rd in the elite standings — on the Swiss Triathlon National League podium.",
+    "cap.ch5":"Together for Switzerland: with the national mixed relay team in the finish chute.",
     "gal.kicker":"Impressions","gal.title":"Moments from racing",
     "ch2.when":"Winter 2025 → May 2026","ch2.title":"The comeback",
     "ch2.lede":"An injury halts the start of the season — and raises the question of where he really stands.",
@@ -1076,12 +1143,16 @@ const I18N = {
     "ch3.lede":"The Euro Champs debut in Elbląg — and a strong home race in Nyon.",
     "ch3.p1":"On 31 July, Antoine makes his debut at the elite Sprint European Championships in Elbląg (POL), finishing 38th. A week later, on 8 and 9 August, comes the home race of the FISU World University Championships in Nyon: 17th individually, and a strong 9th place with the Swiss mixed relay team — in front of a home crowd on Lake Geneva, the season's highest-visibility moment for partners.",
     "vid.v2.title":"On the road with Antoine","vid.v2.sub":"Watch the video →",
-    "ch4.when":"2026 → 2032","ch4.title":"The long road to Brisbane",
-    "ch4.lede":"Missed the cut for the U23 Worlds in Spain by a narrow margin — the horizon shifts further out: Brisbane 2032.",
-    "ch4.p1":"The plan remains long-term: qualification for the 2026 U23 Worlds didn't come together this time — a setback that shows just how tight the field is at the top. The focus now turns to the next opportunity: closing in on the world's best, year after year. Partners who join now accompany this journey from the very start — and grow with every season.",
-    "ch4.pull":"Brisbane 2032 is the dream. The road there starts now.",
+    "ch4.when":"September 2026","ch4.title":"The title",
+    "ch4.lede":"10th at the Europe Cup in Derry — and a week later the biggest day of the season: U23 Swiss Champion.",
+    "ch4.p1":"On 5 September, Antoine crosses the line 10th at the Europe Triathlon Cup in Derry~Londonderry (NIR) — his best continental cup result of the season. Eight days later comes the season finale in Yverdon-les-Bains: at the Swiss Championships he is first out of the water, still leads the race out of the second transition, and brings 3rd place in the elite standings home. In the U23 category that means: Swiss Champion 2026.",
+    "ch4.pull":"First out of the water. Third across the line. U23 Swiss Champion.",
+    "ch5.when":"2026 → 2032","ch5.title":"The long road to Brisbane",
+    "ch5.lede":"Missed the cut for the U23 Worlds in Spain by a narrow margin — the horizon shifts further out: Brisbane 2032.",
+    "ch5.p1":"The plan remains long-term: qualification for the 2026 U23 Worlds didn't come together this time — a setback that shows just how tight the field is at the top. The focus now turns to the next opportunity: closing in on the world's best, year after year. Partners who join now accompany this journey from the very start — and grow with every season.",
+    "ch5.pull":"Brisbane 2032 is the dream. The road there starts now.",
     "results.kicker":"The facts","results.title":"2026 results",
-    "results.lead":"The story is good — the numbers back it up. Elite races on the World Triathlon circuit, sprint distance. As of August 2026.",
+    "results.lead":"The story is good — the numbers back it up. Elite races on the World Triathlon circuit, sprint distance. As of September 2026.",
     "th.pos":"Pos","th.race":"Race","th.date":"Date","th.time":"Time",
     "results.source":"Official data: World Triathlon",
     "results.link":"All results on triathlon.org →",
@@ -1102,7 +1173,7 @@ const I18N = {
     "ct.btn.mail":"Send an e-mail",
     "ft.copy":"© 2026 Antoine L'Hôte · All rights reserved",
     "ft.wt":"World Triathlon profile",
-    "ft.src":"Results & ranking: triathlon.org, as of July 2026",
+    "ft.src":"Results & ranking: triathlon.org, as of September 2026",
     "meta.title":"Antoine L'Hôte — Elite Triathlete · Switzerland"
   }
 };
