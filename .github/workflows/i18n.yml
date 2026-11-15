@@ -1,0 +1,14 @@
+name: i18n
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  keys:
+    name: Translation keys resolve in every language
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/check-i18n.py
